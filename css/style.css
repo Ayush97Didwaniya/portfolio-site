@@ -18,7 +18,6 @@
   @media only screen and (min-width: 1201px) {
     .left {
       padding-top: 5%;
-      float: left;
       padding-left: 5%;
       height: 10%;
       width: 10%;
@@ -28,7 +27,6 @@
   @media only screen and (max-width: 1200px) {
     .left {
       padding-top: 7%;
-      float: left;
       padding-left: 5%;
       height: 10%;
       width: 10%;
@@ -38,7 +36,6 @@
   @media only screen and (max-width: 1000px) {
     .left {
       padding-top: 10%;
-      float: left;
       padding-left: 5%;
       height: 10%;
       width: 10%;
@@ -48,7 +45,6 @@
   @media only screen and (max-width: 750px) {
     .left {
       padding-top: 13%;
-      float: left;
       padding-left: 5%;
       height: 10%;
       width: 10%;
@@ -58,7 +54,6 @@
   @media only screen and (max-width: 550px) {
     .left {
       padding-top: 18%;
-      float: left;
       padding-left: 5%;
       height: 10%;
       width: 10%;
@@ -67,11 +62,12 @@
   
   .right {
     padding-top: 5%;
-    float: right;
     padding-right: 3%;
   }
   
   header {
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 3%;
     padding-top: 2%;
     width: 100%;
@@ -81,7 +77,6 @@
   }
   
   .main-img {
-    clear: both;
     border-top: 3px;
   }
   
@@ -91,11 +86,11 @@
   }
   
   .figure2 img {
-    height: 30%;
+    height: auto;
     width: 100%;
   }
   
-  h2 {
+  p {
     text-align: center;
     font-size: 14px;
   }
@@ -128,39 +123,39 @@
     background-color: #7d97ad;
     margin-left: 40%;
   }
-  
-  @media only screen and (max-width: 800px) {
-    .features {
-      padding-left: 9%;
-      margin-top: 9%;
-      color: #696969;
-      font-size: 16px;
-    }
-  }
-  
+
   @media only screen and (min-width: 801px) {
     .features {
       padding-left: 5%;
       margin-top: 8%;
       color: #696969;
-      font-size: 20px;
+      font-size: 30px;
     }
   }
   
   @media only screen and (max-width: 500px) {
     .features {
-      padding-left: 12%;
+      margin-left: 8%;
       margin-top: 10%;
       color: #696969;
-      font-size: 20px;
+      font-size: 26px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .features {
+      margin-left: 8%;
+      margin-top: 8%;
+      color: #696969;
+      font-size: 30px;
     }
   }
   
-  .inline-block {
-    display: inline;
-    float: left;
-    width: 28%;
+  .flex-inline {
+    display: flex;
+    flex-wrap: wrap;
     margin-right: 2px;
+    justify-content: flex-start;
   }
   
   .align-center {
@@ -180,7 +175,11 @@
       padding-top: 4%;
     }
   }
+
+  h1{
+    text-align: end;
+  }
   
-  h4 {
+  h2 {
     text-align: end;
   }
